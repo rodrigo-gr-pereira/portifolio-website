@@ -1,8 +1,20 @@
 
-import { Sheet } from "lucide-react"
+import { 
+  Sheet,
+SheetContent,
+SheetTrigger,
+ } from "@/components/ui/sheet"
+ import { AlignJustify } from "lucide-react"
+
+
 const MobileNav = () => {
   return (
-    <div>MobileNav</div>
+    <Sheet>
+      <SheetTrigger>
+        <AlignJustify className="cursor-pointer" />
+      </SheetTrigger>
+      <SheetContent>Content</SheetContent>
+    </Sheet>
   )
 }
 
