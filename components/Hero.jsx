@@ -51,8 +51,15 @@ const Hero = () => {
                 </div>
                 {/*image */}
                 <div className="hidden xl:flex relative">
-                    <div className="bg-hero_shape2_light dark:bg-hero_shape_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-                    <DevImg containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-botton' imgSrc='/hero/developer.png'/>
+                {/* badge 1 */}
+                <Badge
+                containerStyles='absolute top-[24%] -left-[5rem]'
+                 icon={<RiBriefcase4Fill/>}
+                 endCountNum={3}
+                 badgeText='Years Of Experiente'
+                 />
+                <div className="bg-hero_shape2_light dark:bg-hero_shape_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+                <DevImg containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-botton' imgSrc='/hero/developer.png'/>
                 </div>
             </div>
             {/*icon */}
